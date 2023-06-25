@@ -1,0 +1,35 @@
+{
+    "name": "srekcud/seat-stock",
+    "description": "Stock level for your corporation",
+    "license": "MIT",
+    "type": "seat-plugin",
+    "authors": [
+      {
+        "name": "srekcud",
+        "email": "infos@srekcud.be"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "srekcud\\Seat\\StockPlugin\\": "src/"
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+      "php": "^7.3",
+      "laravel/framework": "^6.2",
+      "eveseat/web": "^4.15.0",
+      "eveseat/eveapi": "^4.18.2",
+      "eveseat/services": "^4.0",
+      "eveseat/notifications": "^4.0",
+      "recursivetree/seat-treelib": "^1.1.2"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "srekcud\\Seat\\StockPlugin\\StockPluginServiceProvider"
+        ]
+      }
+    }
+  }
